@@ -1,0 +1,79 @@
+.left .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.left .top button {
+  display: none;
+}
+
+.left .theme-toggler {
+  background: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+
+.left .theme-toggler i {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.left .theme-toggler i.active {
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+
+.left .top .profile {
+  display: flex;
+  gap: 2rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .left .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    background: var(--color-white);
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0 1rem 1rem var(--color-light);
+  }
+
+  .left .top .theme-toggler {
+    width: 4.4rem;
+    position: absolute;
+    left: 66%;
+  }
+
+  .left .profile .info {
+    display: none;
+  }
+  .left .top button {
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    color: var(--color-dark);
+    position: absolute;
+    left: 25rem;
+  }
+  .left .top button i {
+    font-size: 2rem;
+  }
+}

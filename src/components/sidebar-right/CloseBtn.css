@@ -1,0 +1,10 @@
+aside .close {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  aside .close {
+    display: inline-block;
+    cursor: pointer;
+  }
+}

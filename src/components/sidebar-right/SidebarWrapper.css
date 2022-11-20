@@ -1,0 +1,24 @@
+aside {
+  /* width assigned in container class */
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    position: fixed;
+    left: 50%;
+    background: var(--color-white);
+    width: 28rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4rem var(--color-light);
+    height: 100vh;
+    padding-right: var(--card-padding);
+    display: none; /* we use JS to set it to visible by click on hamburger menu icon */
+    animation: showMenu 400ms ease forwards;
+  }
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
+  }
+}

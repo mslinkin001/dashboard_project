@@ -1,0 +1,9 @@
+.left {
+  margin-top: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  .left {
+    width: 94%;
+    margin: 0 auto 4rem;
+  }
+}
